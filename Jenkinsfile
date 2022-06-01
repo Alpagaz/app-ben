@@ -1,7 +1,7 @@
 node {
 
-   def registryProjet='localhost:5000/'
-   def IMAGE="${registryProjet}jenkins:versionJenkins-${env.BUILD_ID}"
+   def registryProjet='docker.io/hawkitsu/'
+   def IMAGE="${registryProjet}nginx:version-${env.BUILD_ID}"
 
     stage('Clone') {
           checkout scm
