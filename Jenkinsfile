@@ -18,7 +18,7 @@ node {
     }
 
     stage('Push') {
-          docker.withRegistry('docker.io/hawkitsu', 'docker_id') {
+          docker.withRegistry('www.hub.docker.com/hawkitsu', 'docker_id') {
               img.push 'latest'
               img.push()
           }
